@@ -119,14 +119,19 @@
                     type="video/mp4">
           </video>
         -->
-        <img src="assets/images/teaser_final.png" style="width:70%; margin-right:auto; margin-left:auto; margin-top:auto;">
+        <img src="assets/images/teaser_final.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
         <h2 class="subtitle has-text-centered">
-          We present <span class="dnerf">PhyScene</span>, a novel approach dedicated to generating interactive 3D scenes
-           characterized by realistic layouts, articulated objects, and rich physical interactivity tailored for embodied agents.
+          We present <span class="dnerf">PhyScene</span>, a novel approach to generate interactive 3D scenes
+          <p> </p>
+          characterized by realistic layouts, articulated objects, and rich physical interactivity 
+          <p> </p>
+          tailored for embodied agents.
           <p> </p>
           Based on a conditional diffusion model for capturing scene layouts, 
-          we devise novel physics- and interactivity-based guidance functions encompassing constraints from both 
-          object collision, room layout, as well as agent interactivity. 
+          <p> </p>
+          we devise novel physics- and interactivity-based guidance functions encompassing
+          <p> </p>
+           constraints from both object collision, room layout, as well as agent interactivity. 
           <p> </p>
           We hope our effort could pave the way for new research directions in embodied AI research.
         </h2>
@@ -137,72 +142,26 @@
   
   <section class="hero is-light is-small">
     <div class="hero-body">
-      <div class="container">
-        <h2 class="title has-text-centered">Unconditional Scene Synthesis</h2>
-        <div id="results-carousel" class="carousel results-carousel">
+      <h2 class="title has-text-centered"> Physically Interactable Scene Synthesis</h2>
+      <div class="columns is-centered">
+        <div class="column">
           <div class="item item-Bedroom-2719">
+            <img src="assets/images/two_art_rooms.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+        </div>
+        <div class="column">
+          <video poster="" id="Bedroom-2719" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/rotate/rot-articulated.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+    </div>
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+         
+
+          <!-- <div class="item item-Bedroom-2719">
             <video poster="" id="Bedroom-2719" autoplay controls muted loop playsinline height="100%">
               <source src="./static/videos/uncond/Bedroom-2719_8_130.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-LivingRoom-50084">
-            <video poster="" id="LivingRoom-50084" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingRoom-50084_76_718.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-LivingRoom-68491">
-            <video poster="" id="LivingRoom-68491" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingRoom-68491_81_650.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-SecondBedroom-35821">
-            <video poster="" id="SecondBedroom-35821" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/SecondBedroom-35821_15_393.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-LivingRoom-71071-485">
-            <video poster="" id="LivingRoom-71071-485" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingRoom-71071_8_485.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-LivingRoom-71071-997">
-            <video poster="" id="LivingRoom-71071-997" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingRoom-71071_8_997.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-SecondBedroom-52584">
-            <video poster="" id="SecondBedroom-52584" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/SecondBedroom-52584_24_964.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-LivingRoom-88425">
-            <video poster="" id="LivingRoom-88425" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingRoom-88425_55_025.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-LivingDiningRoom-34678">
-            <video poster="" id="LivingDiningRoom-34678" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingDiningRoom-34678_2_215.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-LivingDiningRoom-86944">
-            <video poster="" id="LivingDiningRoom-86944" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingDiningRoom-86944_84_103.mkv"
-                      type="video/mp4">
-            </video>
-          </div>
-          <div class="item item-LivingDiningRoom-109935">
-            <video poster="" id="LivingDiningRoom-109935" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingDiningRoom-109935_48_096.mkv"
                       type="video/mp4">
             </video>
           </div>
@@ -211,7 +170,7 @@
               <source src="./static/videos/uncond/LivingDiningRoom-163914_165_492.mkv"
                       type="video/mp4">
             </video>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -227,22 +186,21 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We present DiffuScene for indoor 3D scene synthesis
-              based on a novel scene graph denoising diffusion prob-
-              abilistic model, which generates 3D instance properties
-              stored in a fully-connected scene graph and then retrieves
-              the most similar object geometry for each graph node i.e.
-              object instance which is characterized as a concatenation of
-              different attributes, including location, size, orientation, se-
-              mantic, and geometry features. Based on this scene graph,
-              we designed a diffusion model to determine the placements
-              and types of 3D instances. Our method can facilitate
-              many downstream applications, including scene comple-
-              tion, scene arrangement, and text-conditioned scene syn-
-              thesis. Experiments on the 3D-FRONT dataset show that
-              our method can synthesize more physically plausible and
-              diverse indoor scenes than state-of-the-art methods. Extensive ablation studies verify the effectiveness of our design
-              choice in scene diffusion models.
+              With recent developments in Embodied Artificial Intelligence (EAI) research, 
+              there has been a growing demand for high-quality, large-scale interactive scene generation. 
+              While prior methods in scene synthesis have primarily emphasized the naturalness and realism of the generated scenes, 
+              the physical plausibility and interactivity of scenes have been primarily left untouched. 
+              To bridge this gap, we introduce PhyScene, 
+              a novel approach dedicated to generating interactive 3D scenes characterized by 
+              realistic layouts, articulated objects, and rich physical interactivity tailored for embodied agents. 
+              Based on a conditional diffusion model for capturing scene layouts, 
+              we devise novel physics- and interactivity-based guidance functions encompassing constraints 
+              from both object collision, room layout, as well as agent interactivity. 
+              Through extensive experiments, we demonstrate that PhyScene effectively 
+              leverages these guidance functions for physically interactable scene synthesis, 
+              outperforming existing state-of-the-art scene synthesis methods by a large margin. 
+              We believe that our generated scenes could be broadly beneficial for agent to 
+              learn diverse skills within interactive scenes and pave the way for new research in embodied AI.
             </p>
           </div>
         </div>
@@ -259,15 +217,13 @@
         
           <div class="content has-text-justified">
             <p>
-              Given a 3D scene S, we obtain its fully-connected scene graph x0, by parametrizing each object as a graph node storing all object attributes i.e., location, size, orientation, class label,
-              and latent shape code. 
-            </p>
-            
-            <p>
-              Based on a set of all possible x0, we propose DiffuScene, a denoising diffusion probabilistic model
-              for 3D scene graph generation. In the forward process, we gradually add noise to x0 until we obtain a standard Gaussian
-              noise xT. In the reverse process i.e. generative process, a denoising network iteratively cleans the noisy graph using ancestral
-              sampling. Finally, we use the denoised object features to perform shape retrieval for realistic scene synthesis.
+              Physically interactable scene synthesis requires realistic layout, articulated objects, as well as physical interactivity. 
+              There are data-level hurdles between object-level articulated object dataset and static-scene datasets with only rigid-body objects.
+              We introduce how to incorporate articulated objects into generated scenes that is trained solely with static objects.
+              We then explain the model structure and training process of PhyScene, where it learns prior layout knowledge from the dataset.
+              For physical interactivity, we consider collision avoidance, room layout 
+              contraint, and agent interactiveness as three key contraints and transform them into guidance functions
+               as an posterior optimization in inference process. 
             </p>
           </div>
         </div>
@@ -282,41 +238,30 @@
   <section class="section">
     <div class="container is-max-desktop">
       
-      <!-- Scene Completion. -->
-      <h2 class="title is-3">Scene Completion</h2>
+      <!-- Scene with Articulated Objects. -->
+      <h2 class="title is-3">Scene with Articulated Objects</h2>
           <div class="content has-text-justified">
             <p>
-              Scene completion from partial scenes with only 3 objects given as inputs.
+              Retrieve articulate objects from GAPartNet Dataset. 
             </p>
           </div>
+
       <div class="columns is-centered">
         <div class="column">
             <video id="completion-bed-partial" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/completion/Bedroom-17102_150_930-partial-480x480.mkv"
+              <source src="./assets/videos/articulated/art1-cut.mp4"
                       type="video/mp4">
             </video>         
         </div>
         <div class="column">
             <video id="completion-bed-atiss-1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/completion/Bedroom-17102_180-atiss-480x480.mkv"
+              <source src="./assets/videos/articulated/art2-cut.mp4"
                       type="video/mp4">
             </video>
         </div>
-        <!-- <div class="column">
-          <video id="completion-bed-atiss-2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/completion/Bedroom-17102_713-atiss-480x480.mkv"
-                    type="video/mp4">
-          </video>   
-        </div>
-        <div class="column">
-          <video id="completion-bed-ours-1" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/completion/Bedroom-17102_150_004-480x480.mkv"
-                    type="video/mp4">
-          </video>
-        </div> -->
         <div class="column">
           <video id="completion-bed-ours-2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/completion/Bedroom-17102_150_013-480x480.mkv"
+            <source src="./assets/videos/articulated/art3-cut.mp4"
                     type="video/mp4">
           </video>   
         </div>
@@ -326,163 +271,157 @@
       <div class="columns is-centered">
         <div class="column">
             <video id="completion-dining-partial" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/completion/LivingDiningRoom-69704_153_931-partial.mkv"
+              <source src="./assets/videos/articulated/art4-cut.mp4"
                       type="video/mp4">
             </video>    
-            <h2 class="subtitle is-4 has-text-centered">Partial Scenes</h2>
+           
         </div>
         <div class="column">
             <video id="completion-dining-atiss-1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/completion/LivingDiningRoom-69704_153_000-atiss.mkv"
+              <source src="./assets/videos/articulated/art5-cut.mp4"
                       type="video/mp4">
             </video>
-            <h2 class="subtitle is-4 has-text-centered">ATISS</h2>
+            
         </div>
-        <!-- <div class="column">
-          <video id="completion-dining-atiss-2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/completion/LivingDiningRoom-69704_153_001-atiss.mkv"
-                    type="video/mp4">
-          </video>   
-          <h2 class="subtitle is-4 has-text-centered">ATISS-2</h2>
-        </div>
-        <div class="column">
-            <video id="completion-dining-ours-1" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/completion/LivingDiningRoom-69704_153_016.mkv"
-                      type="video/mp4">
-            </video>
-            <h2 class="subtitle is-4 has-text-centered">Ours-1</h2>
-        </div> -->
         <div class="column">
           <video id="completion-dining-ours-2" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/completion/LivingDiningRoom-69704_153_019.mkv"
+            <source src="./assets/videos/articulated/art6-cut.mp4"
                     type="video/mp4">
           </video>   
-          <h2 class="subtitle is-4 has-text-centered">Ours</h2>
+         
         </div>
       </div>
-      <!--/ Scene Completion. -->
+
+      <div class="columns is-centered">
+        <div class="column">
+            <video id="completion-dining-partial" autoplay controls muted loop playsinline height="100%">
+              <source src="./assets/videos/articulated/art7-cut.mp4"
+                      type="video/mp4">
+            </video>    
+            
+        </div>
+        <div class="column">
+            <video id="completion-dining-atiss-1" autoplay controls muted loop playsinline height="100%">
+              <source src="./assets/videos/articulated/art8-cut.mp4"
+                      type="video/mp4">
+            </video>
+           
+        </div>
+        <div class="column">
+          <video id="completion-dining-ours-2" autoplay controls muted loop playsinline height="100%">
+            <source src="./assets/videos/articulated/art9-cut.mp4"
+                    type="video/mp4">
+          </video>   
+         
+        </div>
+      </div>
+      <!--/ Scene with Articulated Objects -->
   
-  
-      <!-- Scene Re-arrangement. -->
-      <h2 class="title is-3">Scene Re-arrangement</h2>
+      <!-- Multi Room. -->
+      <h2 class="title is-3">Build a House with Unseen Floor Plan</h2>
       <div class="content has-text-justified">
         <p>
-          Scene re-arrangements of collections of random objects. 
+          We utilize floor plan & room structure from ProcTHOR and generate scenes with unseen floor plans.
         </p>
       </div>
   
       <div class="columns is-centered">
         <div class="column">
             <video id="rearrange-1-noisy" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/rearrange/LivingDiningRoom-13177_88_442-partial.mkv"
+              <source src="assets/videos/multi-room/single_black-cut.mp4"
+                      type="video/mp4">
+            </video>         
+            <h2 class="subtitle is-4 has-text-centered">Single Room</h2>
+        </div>
+        <div class="column">
+            <video id="rearrange-1-atiss" autoplay controls muted loop playsinline height="100%">
+              <source src="assets/videos/multi-room/multi-black-cut.mp4"
+                      type="video/mp4">
+            </video>
+            <h2 class="subtitle is-4 has-text-centered">Multiple Rooms</h2>
+        </div>
+      </div>
+      <!--/ Robot Interaction. -->
+      
+
+      <!-- Robot Interaction. -->
+      <h2 class="title is-3">Robot Interaction</h2>
+      <div class="content has-text-justified">
+        <p>
+          Robot interact with articulated objects in generated scenes. 
+        </p>
+      </div>
+  
+      <div class="columns is-centered">
+        <div class="column">
+            <video id="rearrange-1-noisy" autoplay controls muted loop playsinline height="100%">
+              <source src="assets/videos/robot/interact_1.mp4"
                       type="video/mp4">
             </video>         
         </div>
         <div class="column">
             <video id="rearrange-1-atiss" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/rearrange/LivingDiningRoom-13177_88_088-atiss.mkv"
+              <source src="assets/videos/robot/interact_2.mp4"
                       type="video/mp4">
             </video>
         </div>
         <div class="column">
           <video id="rearrange-1-ours" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/rearrange/LivingDiningRoom-13177_88_005.mkv"
+            <source src="assets/videos/robot/interact_3.mp4"
                     type="video/mp4">
           </video>   
         </div>
       </div>
-  
+      <!--/ Robot Interaction. -->
+
+      <!-- Robot Interaction. -->
+      <h2 class="title is-3">Floor-conditioned Scene Synthesis</h2>
+      <div class="content has-text-justified">
+        <p>
+          Visualization comparison of PhyScene with ATISS and DiffuScene. 
+          <p></p>
+          The red, purple, and blue boxes respectively indicate collisions between objects, 
+          objects outside the floor plan and unreachable areas to the embodied agent.
+        </p>
+      </div>
   
       <div class="columns is-centered">
         <div class="column">
-            <video id="rearrange-2-noisy" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/rearrange/LivingDiningRoom-79295_184_184_new-partial.mkv"
-                      type="video/mp4">
-            </video>    
-            <h2 class="subtitle is-4 has-text-centered">Noisy Scenes</h2>     
-        </div>
-        <div class="column">
-            <video id="rearrange-2-atiss" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/rearrange/LivingDiningRoom-79295_184_184_new-atiss.mkv"
-                      type="video/mp4">
-            </video>
-            <h2 class="subtitle is-4 has-text-centered">ATISS</h2>
-        </div>
-        <div class="column">
-          <video id="rearrange-2-ours" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/rearrange/LivingDiningRoom-79295_184_006_new.mkv"
-                    type="video/mp4">
-          </video>   
-          <h2 class="subtitle is-4 has-text-centered">Ours</h2>
+          <img src="assets/images/visual_floorplan.png" style="width:80%; margin-right:auto; margin-left:auto; margin-top:auto;">     
         </div>
       </div>
-      <!--/ Scene Re-arrangement. -->
+      <!--/ Robot Interaction. -->
+
+      <!-- Robot Interaction. -->
+      <h2 class="title is-3">Results of Guidance</h2>
+      <div class="content has-text-justified">
+        <p>
+          Results of different guidance with floor-plan condition.    
+        </p>
+      </div>
+      <!-- <div class="columns is-centered"> -->
+        <!-- <div class="column"> -->
+          <img src="assets/images/guidance.png" style="width:80%; margin-right:auto; margin-left:auto; margin-top:auto;">     
+        <!-- </div> -->
+      <!-- </div> -->
+
+      <!-- Robot Interaction. -->
+      <!-- <h2 class="title is-3">Results of Guidance</h2> -->
+      <div class="content has-text-justified">
+        <p>
+          Comparison of PhyScene synthesis without and with guidance. 
+        </p>
+      </div>
+  
+      <!-- <div class="columns is-centered"> -->
+        <!-- <div class="column"> -->
+          <img src="assets/images/bed-dining.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">     
+        <!-- </div> -->
+      </div>
+      <!--/ Robot Interaction. -->
   
   
-      <!-- Text-conditioned Scene Synthesis. -->
-        <h2 class="title is-3">Text-conditioned Scene Synthesis</h2>
-        <div class="content has-text-justified">
-          <p>
-            Text-conditioned scene synthesis. The input text
-            only describes a partial scene configuration.
-          </p>
-        </div>
-    
-        <div class="columns is-centered">
-          <div class="column">
-            <img src="./static/videos/text/LivingDiningRoom-107_text.jpg" style="width:100%; margin-right:auto; margin-left:auto; margin-top: 2.2cm;">
-          </div>
-    
-          <div class="column">
-              <video id="text-1-refer" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/text/LivingDiningRoom-107_41_041_gt.mkv"
-                        type="video/mp4">
-              </video>         
-          </div>
-          <div class="column">
-              <video id="text-1-atiss=" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/text/LivingDiningRoom-107_41_041_atiss.mkv"
-                        type="video/mp4">
-              </video>
-          </div>
-          <div class="column">
-            <video id="rearrange-1-ours" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/text/LivingDiningRoom-107_41_008_ours.mkv"
-                      type="video/mp4">
-            </video>   
-          </div>
-        </div>
-    
-    
-        <div class="columns is-centered">
-          <div class="column">
-            <img src="./static/videos/text/LivingDiningRoom-3483_text.jpg" style="width:100%; margin-right:auto; margin-left:auto;  margin-top: 2.2cm;">
-            <h2 class="subtitle is-4 has-text-centered">Text</h2>    
-          </div>
-  
-          <div class="column">
-              <video id="rearrange-2-noisy" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/text/LivingDiningRoom-3483_163_163_gt-floor6x6.mkv"
-                        type="video/mp4">
-              </video>    
-              <h2 class="subtitle is-4 has-text-centered">Reference</h2>     
-          </div>
-          <div class="column">
-              <video id="rearrange-2-atiss" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/text/LivingDiningRoom-3483_163_355_atiss-floor6x6.mkv"
-                        type="video/mp4">
-              </video>
-              <h2 class="subtitle is-4 has-text-centered">ATISS</h2>
-          </div>
-          <div class="column">
-            <video id="rearrange-2-ours" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/text/LivingDiningRoom-3483_163_008_ours-floor6x6.mkv"
-                      type="video/mp4">
-            </video>   
-            <h2 class="subtitle is-4 has-text-centered">Ours</h2>
-          </div>
-        </div>
-      <!-- Text-conditioned Scene Synthesis. -->
+     
   
   
       <!-- Scene Completion. -->
