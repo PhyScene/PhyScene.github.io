@@ -121,37 +121,28 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <center>
-          <video id="teaser" autoplay muted loop playsinline width="560" height="315">
-            <source src="assets/videos/gif.mp4"
-                    type="video/mp4">
-          </video>
-        </center>
+        
         <img src="assets/images/teaser_compress.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
-        <h2 class="subtitle has-text-centered">
-          <b>TL;DR</b>&nbsp; We present <b><span class="dnerf">PhyScene</span></b>, a novel approach to generate interactive 3D scenes
-          <p> </p>
-          characterized by realistic layouts, articulated objects, and rich physical interactivity 
-          <p> </p>
-          tailored for embodied agents.
-          <p> </p>
+        <h2 class="subtitle has-text-justified">
+          
+          <b>TL;DR</b>&nbsp; 
+          We present <b><span class="dnerf">PhyScene</span></b>, 
+          a novel approach to generate interactive 3D scenes with realistic layouts, articulated objects, and rich physical interactivity tailored for embodied agents.
           Based on a conditional diffusion model for capturing scene layouts, 
-          <p> </p>
-          we devise novel physics- and interactivity-based guidance functions encompassing
-          <p> </p>
-           constraints from both object collision, room layout, as well as agent interactiveness. 
-          <p> </p>
-          We hope our effort could pave the way for new research directions in embodied AI research.
+          we devise novel physics- and interactivity-based guidance functions encompassing constraints from both object collision, room layout, as well as agent interactiveness. 
+          We hope our effort could pave the way for new research directions in embodied AI.
         </h2>
         
       </div>
       <div class="has-text-centered content-block">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zaSLFJ3EVyw?si=c9oMEa1ybgcyWAG6" 
+        <iframe width="760" height="420" src="https://www.youtube.com/embed/C9sEwcqrTww?si=I9YaajZj9Lz9NoeR" 
         title="YouTube video player" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
+      
     </div>
+    
   </section>
   
 <!-- 
@@ -240,17 +231,19 @@
       <!-- Method Overview. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Overview</h2>
-          <img src="assets/images/MODEL.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
-        
+          <!-- <h2 class="title is-3">Overview</h2> -->
+          <center>
+            <!-- <video id="teaser" autoplay muted loop playsinline width="560" height="315"> -->
+            <video id="teaser" autoplay muted loop playsinline >
+              <source src="assets/videos/gif.mp4"
+                      type="video/mp4">
+            </video>
+          </center>
           <div class="content has-text-justified">
-            <p>
-              Physically interactable scene synthesis requires realistic layout, articulated objects, and physical interactivity. 
-              We first leverage diffusion models with a floor plan condition for capturing scene layout distributions.
-              Then we apply three distinct physical guidnce dunctions for guiding the diffusion process to improve the physical plausibility and interactivity of generated scenes.
-              Finally, we use the 3D feature for cross-dataset retrieval with both articulated objects and rigid objects to translate the layout into a physical interactable scene.
-            </p>
+            
           </div>
+
+         
         </div>
       </div>
       <!--/ Method Overview. -->
@@ -262,7 +255,14 @@
   
   <section class="section">
     <div class="container is-max-desktop">
-      
+      <h2 class="title is-3">Model</h2>
+        <img src="assets/images/MODEL.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+        <p>
+          Physically interactable scene synthesis requires realistic layout, articulated objects, and physical interactivity. 
+          We first leverage diffusion models with a floor plan condition for capturing scene layout distributions.
+          Then we apply three distinct physical guidnce dunctions for guiding the diffusion process to improve the physical plausibility and interactivity of generated scenes.
+          Finally, we use the 3D feature for cross-dataset retrieval with both articulated objects and rigid objects to translate the layout into a physical interactable scene.
+        </p>
       <!-- Scene with Articulated Objects. -->
       <h2 class="title is-3">Scene with Articulated Objects</h2>
           <div class="content has-text-justified">
@@ -418,7 +418,7 @@
       <h2 class="title is-3">Results of Guidance</h2>
       <div class="content has-text-justified">
         <p>
-          Results of three distinct guidances with floor-plan condition.    
+          Results of <b>three distinct guidances</b> with floor-plan condition.    
         </p>
       </div>
       <!-- <div class="columns is-centered"> -->
@@ -431,7 +431,7 @@
       <!-- <h2 class="title is-3">Results of Guidance</h2> -->
       <div class="content has-text-justified">
         <p>
-          Comparison of PhyScene synthesis without and with guidance. 
+          Comparison of PhyScene synthesis <b>without</b> and <b>with guidance</b>. 
         </p>
       <!-- </div> -->
   
@@ -443,7 +443,7 @@
 
       <div class="content has-text-justified">
         <p>
-          Comparison of different agent size in reachability guidance. 
+          Comparison of different <b>agent size</b> in reachability guidance. 
           Guidance on a smaller size is not suitable for the agent with a larger size in evaluation. 
         </p>
       <!-- </div> -->
@@ -457,17 +457,17 @@
   
 
 
-      <h2 class="title is-3">Articulated Objects</h2>
+      <!-- <h2 class="title is-3">Articulated Objects</h2>
       <div class="content has-text-justified">
         <p>
           We visualize some models of "Table" and "StorageFurniture" in GAPartNet dataset. 
           The articulated models have various appearances and different joint types such as revolute and prismatic. 
           Each furniture has several joints for interaction. 
         </p>
-      </div>
+      </div> -->
       <!-- <div class="columns is-centered"> -->
         <!-- <div class="column"> -->
-          <img src="assets/images/ARTICULATED.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">     
+          <!-- <img src="assets/images/ARTICULATED.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">      -->
         <!-- </div> -->
       <!-- </div> -->
 
@@ -536,24 +536,29 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>
-        xxx
+      <pre><code class="language-bibtex">
+        @inproceedings{yang2024physcene,
+          title={PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI},
+          author={Yang, Yandan and Jia, Baoxiong and Zhi, Peiyuan and Huang, Siyuan},
+          booktitle=Proceedings of Conference on Computer Vision and Pattern Recognition (CVPR),
+          year={2024}
+        }
       </code></pre>
     </div>
   </section>
   
-<!--   
+  
   <footer class="footer">
     <div class="container">
-      <div class="content has-text-centered">
-        <a class="icon-link"
+      <!-- <div class="content has-text-centered"> -->
+        <!-- <a class="icon-link"
            href="https://arxiv.org/pdf/xxx.pdf">
           <i class="fas fa-file-pdf"></i>
         </a>
         <a class="icon-link" href="https://github.com/xxx" class="external-link" disabled>
           <i class="fab fa-github"></i>
-        </a>
-      </div>
+        </a> -->
+      <!-- </div> -->
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="content">
@@ -565,7 +570,7 @@
         </div>
       </div>
     </div>
-  </footer> -->
+  </footer>
   
   </body>
   </html>
