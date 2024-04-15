@@ -55,24 +55,38 @@
             <h1 class="title is-1 publication-title">PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://github.com/YandanYang">Yandan Yang</a><sup>1</sup>,</span>
+                <a href="https://github.com/YandanYang">Yandan Yang</a><sup>✶</sup>&nbsp;&nbsp;&nbsp;</span>
               <span class="author-block">
-                <a href="https://buzz-beater.github.io/">Baoxiong Jia</a><sup>1</sup>,</span>
+                <a href="https://buzz-beater.github.io/">Baoxiong Jia</a><sup>✶</sup>&nbsp;&nbsp;&nbsp;</span>
               <span class="author-block">
-                <a href="https://github.com/peryion">Peiyuan Zhi</a><sup>1</sup>,</span>
+                <a href="https://github.com/peryion">Peiyuan Zhi</a>&nbsp;&nbsp;&nbsp;</span>
               <span class="author-block">
-                <a href="https://siyuanhuang.com/">Siyuan Huang</a><sup>1</sup>,</span>
+                <a href="https://siyuanhuang.com/">Siyuan Huang</a><sup>✉️</sup></span>
               <span class="author-block">
               </span>
+
+              
             </div>
   
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>Beijing Institute for General Artificial Intelligence (BIGAI)</span>              
+              <span class="author-block">State Key Laboratory of General Artificial Intelligence,</span>      
+              <span class="author-block">Beijing Institute for General Artificial Intelligence (BIGAI)</span>              
             </div>
+            <p style="font-size: 0.9em; padding: 0.5em 0 0 0;">✶ indicates equal contribution &nbsp&nbsp&nbsp  ✉️ indicates corresponding author</p>
+            <!-- <p style="font-size: 0.9em; padding: 0 0 0.5em 0;"></p> -->
   
-            <div class="column has-text-centered">
+            <div style="margin: 1em 0; font-size: 1.1em;">
+              <p> 
+                <a href="assets/paper/PhyScene.pdf">Paper</a> &nbsp;|&nbsp; 
+                <a href="https://arxiv.org/abs/xxx">arXiv</a> &nbsp;|&nbsp; 
+                <a href="assets/paper/PhyScene_supp.pdf">Supp</a> &nbsp;|&nbsp; 
+                <a href="https://github.com/xxx">Code</a> 
+                <!-- &nbsp;|&nbsp; <a href="https://huggingface.co/spaces/SceneDiffuser/SceneDiffuserDemo">Huggingface Space</a> -->
+              </p>
+            </div>
+
+            <!-- <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- PDF Link. -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/xxxx.pdf"
                      class="external-link button is-normal is-rounded is-dark">
@@ -82,9 +96,8 @@
                     <span>Paper</span>
                   </a>
                 </span>
-                <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="https://www.youtube.com/embed/xxxx"
+                  <a href="https://www.youtube.com/watch?v=zaSLFJ3EVyw"
                      class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <i class="fab fa-youtube"></i>
@@ -92,7 +105,6 @@
                     <span>Video</span>
                   </a>
                 </span>
-                <!-- Code Link. -->
                 <span class="link-block">
                   <a href="https://github.com/xxxx"
                      class="external-link button is-normal is-rounded is-dark">
@@ -103,7 +115,7 @@
                     </a>
               </div>
   
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -113,15 +125,15 @@
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
-        <!--
-          <video id="teaser" autoplay muted loop playsinline height="100%">
-            <source src="https://homes.cs.washington.edu/~kpar/nerfies/videos/teaser.mp4"
+        <center>
+          <video id="teaser" autoplay muted loop playsinline width="560" height="315">
+            <source src="assets/videos/gif.mp4"
                     type="video/mp4">
           </video>
-        -->
-        <img src="assets/images/teaser_final.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+        </center>
+        <img src="assets/images/teaser_compress.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
         <h2 class="subtitle has-text-centered">
-          We present <span class="dnerf">PhyScene</span>, a novel approach to generate interactive 3D scenes
+          <b>TL;DR</b>&nbsp; We present <b><span class="dnerf">PhyScene</span></b>, a novel approach to generate interactive 3D scenes
           <p> </p>
           characterized by realistic layouts, articulated objects, and rich physical interactivity 
           <p> </p>
@@ -131,50 +143,74 @@
           <p> </p>
           we devise novel physics- and interactivity-based guidance functions encompassing
           <p> </p>
-           constraints from both object collision, room layout, as well as agent interactivity. 
+           constraints from both object collision, room layout, as well as agent interactiveness. 
           <p> </p>
           We hope our effort could pave the way for new research directions in embodied AI research.
         </h2>
+        
+      </div>
+      <div class="has-text-centered content-block">
+
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/watch?v=zaSLFJ3EVyw" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
       </div>
     </div>
   </section>
   
-  
+
+<!-- 
   <section class="hero is-light is-small">
     <div class="hero-body">
-      <h2 class="title has-text-centered"> Physically Interactable Scene Synthesis</h2>
-      <div class="columns is-centered">
-        <div class="column">
-          <div class="item item-Bedroom-2719">
-            <img src="assets/images/two_art_rooms.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+      <div class="container">
+        <h2 class="title has-text-centered">Physically Interactable Scene Synthesis</h2>
+        <div id="results-carousel" class="carousel results-carousel">
+          <div class="item item-procthor-1">
+            <img src="assets/images/procthor/1.png" style="width:100%; margin-right:0; margin-left:0; margin-top:0;">
           </div>
-        </div>
-        <div class="column">
-          <video poster="" id="Bedroom-2719" autoplay controls muted loop playsinline height="100%">
-            <source src="./assets/videos/rotate/rot-articulated.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-    </div>
-        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
-         
-
-          <!-- <div class="item item-Bedroom-2719">
-            <video poster="" id="Bedroom-2719" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/Bedroom-2719_8_130.mkv"
-                      type="video/mp4">
-            </video>
+          <div class="item item-procthor-2">
+            <img src="assets/images/procthor/2.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
           </div>
-          <div class="item item-LivingDiningRoom-163914">
-            <video poster="" id="LivingDiningRoom-163914" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/uncond/LivingDiningRoom-163914_165_492.mkv"
-                      type="video/mp4">
-            </video>
-          </div> -->
+          <div class="item item-procthor-3">
+            <img src="assets/images/procthor/3.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-4">
+            <img src="assets/images/procthor/4.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-5">
+            <img src="assets/images/procthor/5.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-6">
+            <img src="assets/images/procthor/6.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-7">
+            <img src="assets/images/procthor/7.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-8">
+            <img src="assets/images/procthor/8.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-9">
+            <img src="assets/images/procthor/9.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-10">
+            <img src="assets/images/procthor/10.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-11">
+            <img src="assets/images/procthor/11.png" style="width:100%; margin-right:0; margin-left:auto; margin-top:auto;">
+          </div>
+          <div class="item item-procthor-12">
+            <img src="assets/images/procthor/12.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          </div>
         </div>
       </div>
     </div>
   </section>
+   -->
+
+
   
   
   
@@ -188,42 +224,39 @@
             <p>
               With recent developments in Embodied Artificial Intelligence (EAI) research, 
               there has been a growing demand for high-quality, large-scale interactive scene generation. 
-              While prior methods in scene synthesis have primarily emphasized the naturalness and realism of the generated scenes, 
+              While prior methods in scene synthesis have prioritized the naturalness and realism of the generated scenes, 
               the physical plausibility and interactivity of scenes have been primarily left untouched. 
-              To bridge this gap, we introduce PhyScene, 
-              a novel approach dedicated to generating interactive 3D scenes characterized by 
+              To address this disparity, we introduce PhyScene, 
+              a novel method dedicated to generating interactive 3D scenes characterized by 
               realistic layouts, articulated objects, and rich physical interactivity tailored for embodied agents. 
               Based on a conditional diffusion model for capturing scene layouts, 
-              we devise novel physics- and interactivity-based guidance functions encompassing constraints 
-              from both object collision, room layout, as well as agent interactivity. 
+              we devise novel physics- and interactivity-based guidance mechanisms that integrate constraints 
+              from object collision, room layout, and object reachability. 
               Through extensive experiments, we demonstrate that PhyScene effectively 
               leverages these guidance functions for physically interactable scene synthesis, 
               outperforming existing state-of-the-art scene synthesis methods by a large margin. 
-              We believe that our generated scenes could be broadly beneficial for agent to 
-              learn diverse skills within interactive scenes and pave the way for new research in embodied AI.
+              Our findings suggest that the scenes generated by PhyScene hold considerable potential
+              for facilitating diverse skill acquisition among agents within interactive environments, 
+              thereby catalyzing further advancements in embodied AI research.
             </p>
           </div>
         </div>
       </div>
       <!--/ Abstract. -->
   
-
   
       <!-- Method Overview. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Overview</h2>
-          <img src="assets/images/model.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
+          <img src="assets/images/MODEL.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">
         
           <div class="content has-text-justified">
             <p>
-              Physically interactable scene synthesis requires realistic layout, articulated objects, as well as physical interactivity. 
-              There are data-level hurdles between object-level articulated object dataset and static-scene datasets with only rigid-body objects.
-              We introduce how to incorporate articulated objects into generated scenes that is trained solely with static objects.
-              We then explain the model structure and training process of PhyScene, where it learns prior layout knowledge from the dataset.
-              For physical interactivity, we consider collision avoidance, room layout 
-              contraint, and agent interactiveness as three key contraints and transform them into guidance functions
-               as an posterior optimization in inference process. 
+              Physically interactable scene synthesis requires realistic layout, articulated objects, and physical interactivity. 
+              We first leverage diffusion models with a floor plan condition for capturing scene layout distributions.
+              Then we apply three distinct physical guidnce dunctions for guiding the diffusion process to improve the physical plausibility and interactivity of generated scenes.
+              Finally, we use the 3D feature for cross-dataset retrieval with both articulated objects and rigid objects to translate the layout into a physical interactable scene.
             </p>
           </div>
         </div>
@@ -242,26 +275,26 @@
       <h2 class="title is-3">Scene with Articulated Objects</h2>
           <div class="content has-text-justified">
             <p>
-              Retrieve articulate objects from GAPartNet Dataset. 
+              Here we retrieve articulated objects from GAPartNet Dataset and simulate generated scenes in Omniverse Isaac Sim.
             </p>
           </div>
 
       <div class="columns is-centered">
         <div class="column">
             <video id="completion-bed-partial" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/videos/articulated/art1-cut.mp4"
+              <source src="./assets/videos/articulated/a1.mp4"
                       type="video/mp4">
             </video>         
         </div>
         <div class="column">
             <video id="completion-bed-atiss-1" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/videos/articulated/art2-cut.mp4"
+              <source src="./assets/videos/articulated/a2.mp4"
                       type="video/mp4">
             </video>
         </div>
         <div class="column">
           <video id="completion-bed-ours-2" autoplay controls muted loop playsinline height="100%">
-            <source src="./assets/videos/articulated/art3-cut.mp4"
+            <source src="./assets/videos/articulated/a3.mp4"
                     type="video/mp4">
           </video>   
         </div>
@@ -271,21 +304,21 @@
       <div class="columns is-centered">
         <div class="column">
             <video id="completion-dining-partial" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/videos/articulated/art4-cut.mp4"
+              <source src="./assets/videos/articulated/a4.mp4"
                       type="video/mp4">
             </video>    
            
         </div>
         <div class="column">
             <video id="completion-dining-atiss-1" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/videos/articulated/art5-cut.mp4"
+              <source src="./assets/videos/articulated/a5.mp4"
                       type="video/mp4">
             </video>
             
         </div>
         <div class="column">
           <video id="completion-dining-ours-2" autoplay controls muted loop playsinline height="100%">
-            <source src="./assets/videos/articulated/art6-cut.mp4"
+            <source src="./assets/videos/articulated/a6.mp4"
                     type="video/mp4">
           </video>   
          
@@ -295,21 +328,21 @@
       <div class="columns is-centered">
         <div class="column">
             <video id="completion-dining-partial" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/videos/articulated/art7-cut.mp4"
+              <source src="./assets/videos/articulated/a7.mp4"
                       type="video/mp4">
             </video>    
             
         </div>
         <div class="column">
             <video id="completion-dining-atiss-1" autoplay controls muted loop playsinline height="100%">
-              <source src="./assets/videos/articulated/art8-cut.mp4"
+              <source src="./assets/videos/articulated/a8.mp4"
                       type="video/mp4">
             </video>
            
         </div>
         <div class="column">
           <video id="completion-dining-ours-2" autoplay controls muted loop playsinline height="100%">
-            <source src="./assets/videos/articulated/art9-cut.mp4"
+            <source src="./assets/videos/articulated/a9.mp4"
                     type="video/mp4">
           </video>   
          
@@ -331,14 +364,14 @@
               <source src="assets/videos/multi-room/single_black-cut.mp4"
                       type="video/mp4">
             </video>         
-            <h2 class="subtitle is-4 has-text-centered">Single Room</h2>
+            <h2 class="subtitle is-6 has-text-centered">Single Room</h2>
         </div>
         <div class="column">
             <video id="rearrange-1-atiss" autoplay controls muted loop playsinline height="100%">
               <source src="assets/videos/multi-room/multi-black-cut.mp4"
                       type="video/mp4">
             </video>
-            <h2 class="subtitle is-4 has-text-centered">Multiple Rooms</h2>
+            <h2 class="subtitle is-6 has-text-centered">Multiple Rooms</h2>
         </div>
       </div>
       <!--/ Robot Interaction. -->
@@ -348,7 +381,7 @@
       <h2 class="title is-3">Robot Interaction</h2>
       <div class="content has-text-justified">
         <p>
-          Robot interact with articulated objects in generated scenes. 
+          Robot interact with articulated objects in generated scenes using motion planning. 
         </p>
       </div>
   
@@ -379,15 +412,12 @@
       <div class="content has-text-justified">
         <p>
           Visualization comparison of PhyScene with ATISS and DiffuScene. 
-          <p></p>
-          The red, purple, and blue boxes respectively indicate collisions between objects, 
-          objects outside the floor plan and unreachable areas to the embodied agent.
         </p>
       </div>
   
       <div class="columns is-centered">
         <div class="column">
-          <img src="assets/images/visual_floorplan.png" style="width:80%; margin-right:auto; margin-left:auto; margin-top:auto;">     
+          <img src="assets/images/compare_method.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">     
         </div>
       </div>
       <!--/ Robot Interaction. -->
@@ -396,12 +426,12 @@
       <h2 class="title is-3">Results of Guidance</h2>
       <div class="content has-text-justified">
         <p>
-          Results of different guidance with floor-plan condition.    
+          Results of three distinct guidances with floor-plan condition.    
         </p>
       </div>
       <!-- <div class="columns is-centered"> -->
         <!-- <div class="column"> -->
-          <img src="assets/images/guidance.png" style="width:80%; margin-right:auto; margin-left:auto; margin-top:auto;">     
+          <img src="assets/images/guidance.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">     
         <!-- </div> -->
       <!-- </div> -->
 
@@ -411,16 +441,45 @@
         <p>
           Comparison of PhyScene synthesis without and with guidance. 
         </p>
-      </div>
+      <!-- </div> -->
   
       <!-- <div class="columns is-centered"> -->
         <!-- <div class="column"> -->
-          <img src="assets/images/bed-dining.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">     
+          <img src="assets/images/compare_guidance.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">     
+        <!-- </div> -->
+      </div>
+
+      <div class="content has-text-justified">
+        <p>
+          Comparison of different agent size in reachability guidance. 
+          Guidance on a smaller size is not suitable for the agent with a larger size in evaluation. 
+        </p>
+      <!-- </div> -->
+  
+      <!-- <div class="columns is-centered"> -->
+        <!-- <div class="column"> -->
+          <img src="assets/images/agentsize.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">     
         <!-- </div> -->
       </div>
       <!--/ Robot Interaction. -->
   
-  
+
+
+      <h2 class="title is-3">Articulated Objects</h2>
+      <div class="content has-text-justified">
+        <p>
+          We visualize some models of "Table" and "StorageFurniture" in GAPartNet dataset. 
+          The articulated models have various appearances and different joint types such as revolute and prismatic. 
+          Each furniture has several joints for interaction. 
+        </p>
+      </div>
+      <!-- <div class="columns is-centered"> -->
+        <!-- <div class="column"> -->
+          <img src="assets/images/ARTICULATED.png" style="width:100%; margin-right:auto; margin-left:auto; margin-top:auto;">     
+        <!-- </div> -->
+      <!-- </div> -->
+
+    
      
   
   
